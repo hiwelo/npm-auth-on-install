@@ -5,9 +5,10 @@
   "main": "lib/index.js",
   "bin": "lib/index.js",
   "scripts": {
-    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "auth": "node lib/index.js",
     "build": "tsc -p .",
-    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
   },
   "author": "Damien Senger <damien@raccoon.studio>",
   "license": "MIT",

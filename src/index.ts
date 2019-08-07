@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import chalk from 'chalk';
-import path from 'path';
 import program from 'commander';
 
 /**
@@ -16,10 +15,13 @@ import program from 'commander';
   program
     .version('0.0.1')
     .description('Check and setup access to private NPM registry or package')
-    .option('-r', '--registry <registryUrl>', 'Private registry, to override package.json publishConfig')
+    .option(
+      '-r',
+      '--registry <registryUrl>',
+      'Private registry, to override package.json publishConfig'
+    )
     .option('-p', '--package <packageName>', 'Private package, used to test access to the registry')
     .parse(process.argv);
 
   console.log(chalk.red('test'));
-  console.log(program);
 })();

@@ -7,10 +7,9 @@
   "scripts": {
     "auth": "node lib/index.js",
     "build": "tsc -p .",
-    "lint": "npm-run-all lint:*",
     "lint:ts": "eslint --ext .ts src/",
     "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
-    "test:script": "npm-run-all build auth",
+    "test:script": "yarn build && yarn auth",
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
   },
   "author": "Damien Senger <damien@raccoon.studio>",
@@ -30,7 +29,6 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "nodemon": "^1.19.1",
-    "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3"

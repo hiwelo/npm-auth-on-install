@@ -18,10 +18,13 @@
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "commander": "^2.20.0",
-    "path": "^0.12.7"
+    "lodash": "^4.17.15",
+    "path": "^0.12.7",
+    "util": "^0.12.1"
   },
   "devDependencies": {
     "@types/clear": "^0.1.0",
+    "@types/lodash": "^4.14.136",
     "@types/node": "^12.7.0",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
